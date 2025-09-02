@@ -1,8 +1,8 @@
 [project]
-name = 'indico-price-adjustments'
-description = 'Price adjustments for logged in users'
+name = 'indico-custom-pass'
+description = 'Grants admins the ability to customize Indico Google Wallet & Apple Pay passes.'
 readme = 'README.md'
-version = '1.0'
+version = '1.0.3'
 license = {text = "MIT License"}
 authors = [{ name = 'RobotHanzo', email = 'admin@robothanzo.dev' }]
 classifiers = [
@@ -14,17 +14,17 @@ requires-python = '>=3.12, <3.13'
 dependencies = ['indico>=3.3', 'pygments>=2.7.2,<3', 'indico-patcher>=0.2.1']
 
 [project.urls]
-GitHub = 'https://github.com/indico/indico-plugins'
+GitHub = 'https://github.com/RobotHanzo/IndicoCustomPass'
 
 [project.entry-points.'indico.plugins']
-price_adjustments = 'indico_price_adjustments.plugin:PriceAdjustmentsPlugin'
+custom_pass = 'indico_custom_pass.plugin:CustomPassPlugin'
 
 [build-system]
 requires = ['hatchling==1.27.0']
 build-backend = 'hatchling.build'
 
 [tool.hatch.build]
-packages = ['indico_price_adjustments']
+packages = ['indico_custom_pass']
 exclude = [
     '*.no-header',
     '.keep',

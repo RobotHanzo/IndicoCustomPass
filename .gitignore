@@ -7,3 +7,4 @@
 *.mo
 dist/
 build/
+update.sh
