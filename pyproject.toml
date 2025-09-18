@@ -2,7 +2,7 @@
 name = 'indico-custom-pass'
 description = 'Grants admins the ability to customize Indico Google Wallet & Apple Pay passes.'
 readme = 'README.md'
-version = '1.0.3'
+version = '1.0.4'
 license = {text = "MIT License"}
 authors = [{ name = 'RobotHanzo', email = 'admin@robothanzo.dev' }]
 classifiers = [
